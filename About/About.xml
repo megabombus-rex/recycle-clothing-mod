@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Clothing Recycled Mod</name>
+	<author>JanekBambol</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>JanekBambol.ClothingRecycled</packageId>
+	<description>Mod for recycling the clothing that is too tattered to wear.
+	</description>
+</ModMetaData> <!-- Will probably use harmony, that's why it's here.-->
