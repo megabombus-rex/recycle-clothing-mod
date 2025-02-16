@@ -1,44 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RecipeDef>
-	<defName>Recycle_Clothing</defName>
-	<label>recycle clothing</label>
-	<description>Recycle a piece of clothing, nothing should be wasted. Right?</description>
-	<jobString>Recycling clothing piece.</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-	<effectWorking>Tailor</effectWorking>
-	<soundWorking>Recipe_Tailor</soundWorking>
-	<workAmount>1600</workAmount>
-	<allowMixingIngredients>false</allowMixingIngredients>
-	<targetCountAdjustment>50</targetCountAdjustment>
-	<recipeUsers>
-	  <li>ElectricTailoringBench</li>
-	  <li>HandTailoringBench</li>
-	</recipeUsers>
-	<ingredients>
-	  <li>
-		<filter>
+<Defs>
+	<RecipeDef>
+		<defName>Recycle_Clothing</defName>
+		<label>Recycle clothing</label>
+		<description>Recycle a piece of clothing, nothing should be wasted. Right?</description>
+		<jobString>Recycling clothing piece.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>1600</workAmount>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<recipeUsers>
+		  <li>ElectricTailoringBench</li>
+		  <li>HandTailoringBench</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <categories>
+				<li>Apparel</li>
+			  </categories>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
 		  <categories>
 			<li>Apparel</li>
 		  </categories>
-		  <disallowedThingDefs>
-			<li>Leather_Thrumbo</li>
-          </disallowedThingDefs>
-		</filter>
-		<count>1</count>
-	  </li>
-	</ingredients>
-	<fixedIngredientFilter>
-	  <categories>
-		<li>Apparel</li>
-	  </categories>
-      <disallowedThingDefs>
-   	    <li>OrbitalTargeterPowerBeam</li>
-		<li>OrbitalTargeterBombardment</li>
-      </disallowedThingDefs>
-	</fixedIngredientFilter>
-	<products>
-		<li>Smelted</li>
-	</products>
-	<workSkill>Crafting</workSkill>
-	<workerClass>RecipeWorker_ClothingRecycle</workerClass>
-</RecipeDef>
+		</fixedIngredientFilter>
+		<!--<products>
+			<li>Smelted</li>
+		</products> -->
+		<specialProducts>
+			<li>Smelted</li>
+		</specialProducts>
+		<workSkill>Crafting</workSkill>
+		<workerClass>RecipeWorker_RecycleClothing</workerClass>
+	</RecipeDef>
+</Defs>

@@ -34,6 +34,7 @@ namespace ClothingRecycledMod
 
                 Log.Message($"Recycled material placed near {apparel.PositionHeld}");
             }
+            base.ConsumeIngredient(ingredient, recipe, map);
         }
     }
 }
